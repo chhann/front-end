@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .big{
+            position: relative;
+            border: 1px solid black;
+            width: 800px;
+            height: 800px;
+        }
+
+        .small1 {
+            position: absolute;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            right: 10px;
+            top: 10px;
+        }
+
+        .small2 {
+            position: absolute;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            left: 0px;
+            bottom: 0px;
+        }
+
+        .test1 {
+            box-sizing: border-box;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        .test2 {
+            
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <div class="small1"></div>
+        <div class="small2"></div>
+    </div>
+
+    <div class="test1">hi</div>
+    <div class="test2">hi</div>
+</body>
+</html>

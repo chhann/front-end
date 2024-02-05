@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        input[type=":checkbox"] {
+            display: none;
+        }
+
+        label {
+            display: block;
+            position: relative;
+            border: 1px solid #dbdbdb;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+        }
+
+        input[type='checkbox']:checked + label > div{
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            background-color: blue;
+        }
+
+        input[type='checkbox']:checked + label > div:not(#chk1:checked + label > div) {
+           
+            background-color: red;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <input type="checkbox" id="chk1">
+    <!-- for 때문에 레이블테그도 누르면 체크됨 -->
+    <label for="chk1">
+        <div></div>
+    </label>
+
+    <input type="checkbox" id="chk2">
+    <label for="chk2">
+        <div></div>
+    </label>
+    
+
+
+
+</body>
+</html>

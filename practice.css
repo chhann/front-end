@@ -1,0 +1,54 @@
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+div > div {
+    width: 100px;
+    height: 100px;
+}
+
+div > div:nth-of-type(2n) {
+    background-color: rgb(0, 0, 0);
+}
+
+div > div:nth-of-type(n + 4){
+    position: absolute;
+}
+
+div > div:nth-child(3 - n) {
+    position: relative;
+}
+
+.sub-tile4 {
+    left: 100px;
+    top: 0px;
+}
+
+.sub-tile5 {
+    left: 100px;
+    top: 100px;
+}
+
+.sub-tile6 {
+    left: 100px;
+    top: 200px;
+}
+
+.sub-tile7 {
+    left: 200px;
+    top: 0px;
+}
+
+.sub-tile8 {
+    left: 200px;
+    top: 100px;
+}
+
+.sub-tile9 {
+    left: 200px;
+    top: 200px;
+}
