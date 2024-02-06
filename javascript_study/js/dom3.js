@@ -2,8 +2,6 @@ const submit = document.querySelector(".input-submit");
 let count = 1;
 
 submit.onclick = () => {
-
-    
     const name = document.querySelector(".name");
     const age = document.querySelector(".age");
     const address = document.querySelector(".address");

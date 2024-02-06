@@ -41,10 +41,6 @@ let div = (a, b) => {
     return a / b ;
 }
 
-div (a, b){
-    return a / b;
-}
-
 console.log(div(10,5));
 
 div = (a, b) => a / b;;

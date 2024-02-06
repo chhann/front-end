@@ -1,4 +1,4 @@
-// var, let
+// 변수 var, let
 // 상수 const
 
 var num1 = 10;

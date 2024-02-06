@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="text-inputs" placeholder="username">
+    <input type="text" class="text-inputs" placeholder="password">
+    <input type="text" class="text-inputs" placeholder="name">
+    <input type="text" class="text-inputs" placeholder="email">
+
+    <ul>
+        <li class="preview-data">username:</li>
+        <li class="preview-data">password:</li>
+        <li class="preview-data">name:</li>
+        <li class="preview-data">email:</li>
+    </ul>
+
+    <script>
+        const textInputs = document.querySelectorAll(".text-inputs")
+        
+        // for(let i = 0; i < textInputs.length -1; i++) {
+        //     textInputs[i].onkeyup = (e) => {
+        //         if(e.keyCode === 13){
+        //             textInputs[i + 1].focus();
+        //         }
+        //     }
+        // }
+
+        // textInputs[3].onkeyup = (e) => {
+            
+        //     if(e.keyCode === 13) {
+
+        //         for(let input of textInputs){
+        //             if(input.value.length === 0){
+        //                 input.focus();
+        //                 return;
+        //             }
+        //         }
+                
+        //         const previewData = document.querySelectorAll(".preview-data")
+        //         for(let i = 0; i < previewData.length; i++){
+        //             previewData[i].innerHTML += textInputs[i].value
+        //         }
+        //     }
+        // }
+
+        
+        textInputs[0].onkeyup = (e) => {
+            console.log(e.keyCode)
+            if(e.keyCode === 13) {
+                textInputs[1].focus();
+            } 
+        }
+
+        textInputs[1].onkeyup = (e) => {
+            if(e.keyCode === 13) {
+                textInputs[2].focus();
+            } 
+        }
+
+        textInputs[2].onkeyup = (e) => {
+            if(e.keyCode === 13) {
+                textInputs[3].focus();
+            } 
+        }
+
+        textInputs[3].onkeyup = (e) => {
+            const previewData = document.querySelectorAll(".preview-data")
+
+            if(e.keyCode === 13) {
+                previewData[0].innerHTML += textInputs[0].value
+                previewData[1].innerHTML += textInputs[1].value
+                previewData[2].innerHTML += textInputs[2].value
+                previewData[3].innerHTML += textInputs[3].value
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>

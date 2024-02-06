@@ -50,4 +50,4 @@ dataMap.set("password", "1234");
 console.log(dataMap);
 console.log(dataMap.get("password"));
 
-
+console.log();
