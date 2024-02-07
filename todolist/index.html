@@ -21,7 +21,9 @@
                 <p class="sub-title">할 일을 기록해보세요</p>
             </header>
             <main>
+                <ul class="todo-content-list">
 
+                </ul>
             </main>
             <footer>
                 <button class="add-button" onclick="handleAddTodoModalOpen();">
@@ -34,7 +36,7 @@
             <div class="modal-layout">
                 <div class="modal-header">
                     <h2 class="modal-title">
-                        
+                        추가하기
                     </h2>
                 </div>
                 <div class="modal-main">
@@ -42,11 +44,12 @@
                 </div>
                 <div class="modal-footer">
                     <button class="modal-button">확인</button>
-                    <button class="modal-button" onclick="handleCancelClick()">취소</button>
+                    <button class="modal-button" onclick="handleCancleClick()">취소</button>
                 </div>
             </div>
         </div>
     </div>
     <script src="js/modal.js"></script>
+    <script src="js/todo.js"></script>
 </body>
 </html>

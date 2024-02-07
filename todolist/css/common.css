@@ -17,3 +17,15 @@ button {
         background-color: #aaa;
     }
 }
+
+* ::-webkit-scrollbar {
+    
+    width: 5px;
+    background-color: black;
+}
+
+*::-webkit-scrollbar-thumb {
+    border: 1px solid #dbdbdb;
+    width: 2px;
+    background-color: white;
+}
